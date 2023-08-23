@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Signin / Signup Form</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/Images/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+    <link rel="stylesheet" href="/BOOTSTRAP/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/Sign-in-up.css" />
+    <script src="/BOOTSTRAP/JS/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+</head>
+
+<body>
+    <!-- ! Pre-loader Starting-->
+    <div id="preloader">
+        <div class="loader">
+            <div>
+                <ul>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                </ul>
+
+            </div>
+            <span
+                style="font-size: 25px; color: rgb(15, 15, 15); margin-left: 10px; font-weight: 600; font-family:monospace;">Loading..</span>
+        </div>
+    </div>
+    <!-- Pre-loader Ending-->
+
+
+
+    <!-- !Nav-bar Starting -->
+    <nav class="navbar fixed-top navbar-expand-xl">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="navbar-icon" src="/Images/Navbar-image.png" alt="">
+                <span class="brand-name">
+                    Visual Web Learning
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-headings navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link not-active" aria-current="page" href="/Index.html">
+                            <!-- <i class="link-icon fa-solid fa-house" style="color: black;"></i> -->
+                            <lord-icon id="icon" src="https://cdn.lordicon.com/etqbfrgp.json" trigger="morph"
+                                style="width:50px;height:50px">
+                            </lord-icon>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link not-active" href="/Learning.html">
+                            <!-- <i class="link-icon fa-solid fa-book-open" style="color: black;"></i> -->
+                            <lord-icon src="https://cdn.lordicon.com/ttioogfl.json" trigger="morph"
+                                style="width:50px;height:50px">
+                            </lord-icon>
+                            Start Learning</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="/Sign-in-up.html">
+                            <!-- <i class="link-icon fa-solid fa-right-to-bracket" style="color: black;"></i> -->
+                            <lord-icon src="https://cdn.lordicon.com/twopqjaj.json" trigger="hover"
+                                style="width:50px;height:50px">
+                            </lord-icon>
+                            Signin / Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav-bar Ending -->
+
+    <!-- Log In Form Section -->
+    <section>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Sign Up</h1>
+                    <div class="social-container">
+                        <a class="text-decoration" href="https://Github.com/farazc60" target="_blank" class="social">
+                            <i class="fa-brands fab fa-github"></i>
+                        </a>
+                        <a class="text-decoration" href="https://Codepen.io/codewithfaraz" target="_blank"
+                            class="social">
+                            <i class="fa-brands fab fa-linkedin"></i>
+                        </a>
+                        <a class="text-decoration" href="mailto:farazc60@gmail.com" target="_blank" class="social">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </div>
+                    <span>Or use your Email for registration</span>
+                    <label>
+                        <input type="text" placeholder="Name" pattern="[A-Za-z_ ]{8,}"
+                            oninvalid="setCustomValidity('Minimum 8 characters [(A-Z) , (a-z) & (_)]')"
+                            title="Minimum 8 characters [(A-Z) , (a-z) & (_)]" />
+                    </label>
+                    <label>
+                        <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Password"
+                            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+                            oninvalid="setCustomValidity('Minimum 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character:')"
+                            title="Minimum 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character:" />
+                    </label>
+                    <button style="margin-top: 9px">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a class="text-decoration" href="https://Github.com/farazc60" target="_blank" class="social">
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+                        <a class="text-decoration" href="https://Codepen.io/codewithfaraz" target="_blank"
+                            class="social">
+                            <i class="fa-brands fa-linkedin"></i>
+
+                        </a>
+                        <a class="text-decoration" href="mailto:farazc60@gmail.com" target="_blank" class="social">
+                            <i class="fa-brands fab fa-google"></i>
+                        </a>
+                    </div>
+                    <span> Or sign in using E-Mail Address</span>
+                    <label>
+                        <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
+                    </label>
+                    <label>
+                        <input type="password" placeholder="Password"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                            oninvalid="setCustomValidity('Minimum 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character:')"
+                            title="Minimum 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character:" />
+                    </label>
+                    <a class="text-decoration" href="#">Forgot your password?</a>
+                    <button>Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Log in</h1>
+                        <p>Sign in here if you already have an account </p>
+                        <button class="ghost mt-5" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Create, Account!</h1>
+                        <p>Sign up if you still don't have an account ... </p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/p-7AIeWiXQ8"
+            title="VIRAT KOHLI VS ROHIT SHARMA FIGHT! FT KL RAHUL" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/p-7AIeWiXQ8" title="VIRAT KOHLI VS ROHIT SHARMA FIGHT! FT KL RAHUL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+    </section>
+    <!-- Inline JavaScript Starting -->
+    <script>
+        // var loader = document.getElementById("preloader");
+        document.body.style.position = "fixed";
+        window.addEventListener("load", () => {
+            document.body.style.position = "";
+            // loader.style.display = "none";
+            document.getElementById("preloader").style.display = "none";
+        });
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () =>
+            container.classList.add('right-panel-active'));
+
+        signInButton.addEventListener('click', () =>
+            container.classList.remove('right-panel-active'));
+    </script>
+    <!-- Inline JavaScript Ending -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
+
+</body>
+
+</html>

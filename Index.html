@@ -1,0 +1,327 @@
+<!-- todays target
+--- blur navbar 
+--- decide and design proper layout for website 
+--- decide color combination
+--- Mobile first ( Responsive )
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Web Learning</title>
+  <link rel="shortcut icon" href="/Images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/BOOTSTRAP/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/BOOTSTRAP/JS/bootstrap.bundle.min.js"></script>
+  <script src="/main.js"></script>
+  <link rel="stylesheet" href="/FONTS/css/all.min.css">
+  <script src="/FONTS/js/all.min.js"></script>
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ! Pre-loader Starting-->
+  <div id="preloader">
+    <div class="loader">
+      <div>
+        <ul>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+        </ul>
+
+      </div>
+      <span style="font-size: 25px; color: rgb(15, 15, 15); margin-left: 10px; font-weight: 600; font-family:monospace;" >Loading..</span>
+    </div>
+  </div>
+  <!-- Pre-loader Ending-->
+
+
+  <!-- !Nav-bar Starting -->
+  <nav class="navbar fixed-top navbar-expand-xl">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="navbar-icon" src="/Images/Navbar-image.png" alt="">
+        <span class="brand-name">
+          Visual Web Learning
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-headings navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Index.html">
+              <!-- <i class="link-icon fa-solid fa-house" style="color: black;"></i> -->
+              <lord-icon id="icon" src="https://cdn.lordicon.com/etqbfrgp.json" trigger="morph"
+                style="width:50px;height:50px">
+              </lord-icon>
+              Home
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link not-active" href="/Learning.html">
+              <!-- <i class="link-icon fa-solid fa-book-open" style="color: black;"></i> -->
+              <lord-icon src="https://cdn.lordicon.com/ttioogfl.json" trigger="morph" style="width:50px;height:50px">
+              </lord-icon>
+              Start Learning</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link not-active" href="/Sign-in-up.html">
+              <!-- <i class="link-icon fa-solid fa-right-to-bracket" style="color: black;"></i> -->
+              <lord-icon src="https://cdn.lordicon.com/twopqjaj.json" trigger="hover" style="width:50px;height:50px">
+              </lord-icon>
+              Signin / Signup</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav-bar Ending -->
+
+  <!--! section-1 Starting -->
+  <div class="section-1">
+    <iframe width="104" height="58" src="https://www.youtube.com/embed/_fWyWcZB7VA" title="Health Anxiety - Standup Comedy by Abhishek Upmanyu (Full Special on YT)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+    <!-- <iframe width="104" height="58" src="https://www.youtube.com/embed/_fWyWcZB9VA"></iframe>     -->
+    <div class="sub1-sec">
+      <div class="flip-card1">
+        <div class="flip-card-inner1">
+          <div class="flip-card-front1">
+            <img src="/Images/stressed-1.jpg" alt="">
+          </div>
+          <div class="flip-card-back1">
+            <img src="/Images/stressed-2.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="text1">
+        <span class="before"> <span style="color: rgb(25, 8, 108); font-weight: 600;">BEFORE</span> Visual Web Learning
+        </span>
+        JavaScript , Html and Css have lots of information to learn.
+        Its hard to remember all small details and functionalities of
+        each and every element if you have just mugged it up.
+        Understanding Web Devlopment only through theory is not
+        enough to clear the concepts , which is more important.
+      </div>
+    </div>
+
+    <div class="sub2-sec">
+      <div class="text2">
+        <span class="after"> <span style="color: rgb(25, 8, 108); font-weight: 600;">AFTER</span> Visual Web Learning
+        </span>
+        Visual Web Learning provides all visual outputs of each and every element and property so it's easy for student
+        to remember its function. This way of Learning not only help student in remembering its functionalities but also
+        clears the concept
+      </div>
+      <div class="flip-card2">
+        <div class="flip-card-inner2">
+          <div class="flip-card-front2">
+            <img src="/Images/happy-1.svg" alt="">
+          </div>
+          <div class="flip-card-back2">
+            <!-- <h1>After</h1>
+            <h2>Visual Web Learning</h2> -->
+            <img src="/Images/happy-2.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section-1 Ending -->
+
+  <!--! section-2 Starting -->
+  <div class="section-2">
+    <h1 class="courses" style="padding-bottom: 15px;"> Subjects We Provide </h1>
+    <div class="card-container">
+      <a href="/Learning.html#html">
+        <div class="card html">
+          <img src="/Images/html (1).png" alt="">
+        </div>
+      </a>
+      <a href="/Learning.html#css">
+        <div class="card css">
+          <img src="/Images/css (2).png" alt="">
+        </div>
+      </a>
+      <a href="/Learning.html#js">
+        <div class="card js">
+          <img src="/Images/javascript.png" alt="">
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- section-2 Ending -->
+
+  <!--! section-3 Starting -->
+  <div class="section-3" id="ad">
+    <div class="points-container">
+      <h1>Advantages of Visual Learning</h1>
+      <div class="point"><i class="fa-solid fa-hand-point-right"></i>Helping students retain information for a longer
+        period of time</div>
+      <div class="point"><i class="fa-solid fa-hand-point-right"></i>Helping students retain information for a longer
+        period of time</div>
+      <div class="point"><i class="fa-solid fa-hand-point-right"></i>Helping students retain information for a longer
+        period of time</div>
+      <div class="point"><i class="fa-solid fa-hand-point-right"></i>Helping students retain information for a longer
+        period of time</div>
+    </div>
+  </div>
+
+  <!-- section-3 Ending -->
+
+  <!-- ! Last section starting -->
+
+  <div class="lastsection">
+    <h1> Contact Us</h1>
+    <div class="contactus">
+        <div class="suggestions">
+          We have tried to provide Visual effects of Many elements then also if any element is remaining then you can
+          suggest the name of the element you want us to add on our webpage and even you can suggest any change you want
+          in our websites.
+          Simply you can contact us through any social media handle provided here.
+        </div>
+        <div class="border"></div>
+        <div class="socialmedia">
+          <p>Social Media <br> Handles
+          </p>
+          <div class="icons">
+            <div class="box">
+              <div class="icon">
+                <div class="bg ibg"></div>
+                <a href="https://instagram.com/k.hushil21?igshid=ZDdkNTZiNTM=" class="glass" target="_blank">
+                  <i class="fa-brands fa-instagram instagram"></i>
+                </a>
+              </div>
+
+              <a class="a ai" href="https://instagram.com/k.hushil21?igshid=ZDdkNTZiNTM=" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <div class="icons">
+            <div class="box">
+              <div class="icon">
+                <div class="bg wbg"></div>
+                <a class="glass" href="https://wa.me/6353888455" target="_blank">
+                  <i class="fa-brands fa-whatsapp whatsapp" ></i>
+                </a>
+              </div>
+              <a class="a aw" href="https://wa.me/6353888455" target="_blank">Whatsapp</a>
+            </div>
+          </div>
+          <div class="icons">
+            <div class="box">
+              <div class="icon">
+                <div class="bg tbg"></div>
+                <a href="https://twitter.com/khushilshah2105" target="_blank" class="glass">
+                  <i class="fa-brands fa-twitter twitter"></i>
+                </a>
+              </div>
+              <a class="a at" href="https://twitter.com/khushilshah2105" target="_blank" >Twitter </a>
+            </div>
+          </div>
+
+        </div>
+  
+    </div>
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 360" version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(0, 173.101, 207.557, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(0, 74.441, 255, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+        d="M0,0L48,48C96,96,192,192,288,234C384,276,480,264,576,216C672,168,768,84,864,90C960,96,1056,192,1152,234C1248,276,1344,264,1440,216C1536,168,1632,84,1728,42C1824,0,1920,0,2016,30C2112,60,2208,120,2304,120C2400,120,2496,60,2592,66C2688,72,2784,144,2880,186C2976,228,3072,240,3168,222C3264,204,3360,156,3456,168C3552,180,3648,252,3744,288C3840,324,3936,324,4032,288C4128,252,4224,180,4320,150C4416,120,4512,132,4608,168C4704,204,4800,264,4896,276C4992,288,5088,252,5184,216C5280,180,5376,144,5472,120C5568,96,5664,84,5760,72C5856,60,5952,48,6048,48C6144,48,6240,60,6336,78C6432,96,6528,120,6624,138C6720,156,6816,168,6864,174L6912,180L6912,360L6864,360C6816,360,6720,360,6624,360C6528,360,6432,360,6336,360C6240,360,6144,360,6048,360C5952,360,5856,360,5760,360C5664,360,5568,360,5472,360C5376,360,5280,360,5184,360C5088,360,4992,360,4896,360C4800,360,4704,360,4608,360C4512,360,4416,360,4320,360C4224,360,4128,360,4032,360C3936,360,3840,360,3744,360C3648,360,3552,360,3456,360C3360,360,3264,360,3168,360C3072,360,2976,360,2880,360C2784,360,2688,360,2592,360C2496,360,2400,360,2304,360C2208,360,2112,360,2016,360C1920,360,1824,360,1728,360C1632,360,1536,360,1440,360C1344,360,1248,360,1152,360C1056,360,960,360,864,360C768,360,672,360,576,360C480,360,384,360,288,360C192,360,96,360,48,360L0,360Z">
+      </path>
+    </svg>
+  </div>
+
+  <!--  Last section ending -->
+
+
+  <!-- ! Copyright section starting -->
+  <div class="copyright">
+    <a class="navbar-brand" href="#">
+      <img style="height: 10vh;" src="/Images/Navbar-image.png" alt="">
+      <span class="brand-name">
+        Visual Web Learning
+      </span>
+    </a>
+    <p class="center">
+      <i class="fa-solid fa-copyright"></i> 
+      2023 Copyright: Visual Web Learning All Rights are reserved by KHUSHIL HITESH SHAH , the CEO of this Company and devloper of this site
+    </p>
+    <div class="emails">
+      <a class="dm" href="mailto:khushilshah2105@gmail.com"><i class="fa-solid fa-envelope"></i>khushilshah2105@gmail.com</a>
+      <a class="dm" href="tel:6353888455"><i class="fa-solid fa-phone"></i>6353888455</a>
+    </div>
+  </div>
+  <!--  Copyright section Ending -->
+
+
+  <!--! Inline JavaScript Starting -->
+
+  <!-- todo mouseover then triggred loop mouse out triggerd hover for lordicon -->
+  <script>
+    // var loader = document.getElementById("preloader");
+    document.body.style.position = "fixed";
+    window.addEventListener("load", () => {
+      document.body.style.position = "";
+      // loader.style.display = "none";
+      document.getElementById("preloader").style.display = "none";
+    });
+
+
+
+  </script>
+  <!-- Inline JavaScript Ending -->
+
+</body>
+
+</html>
